@@ -10,6 +10,7 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+	@IBOutlet var waveLogoImage: UIImageView!
 	@IBOutlet var signUpButton: UIButton!
 	@IBOutlet var logInButton: UIButton!
 	

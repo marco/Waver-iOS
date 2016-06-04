@@ -8,7 +8,6 @@
         <mutableArray key="coolvetica rg.ttf">
             <string>CoolveticaRg-Regular</string>
             <string>CoolveticaRg-Regular</string>
-            <string>CoolveticaRg-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -33,8 +32,8 @@
                                     <color key="titleColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvG-5I-Hxy">
-                                <rect key="frame" x="0.0" y="490" width="600" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvG-5I-Hxy">
+                                <rect key="frame" x="0.0" y="491" width="600" height="56"/>
                                 <color key="backgroundColor" red="0.058823529411764705" green="0.18823529411764706" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
@@ -42,15 +41,17 @@
                                     <color key="titleColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agG-cC-8M1">
-                                <rect key="frame" x="232" y="159" width="154" height="69"/>
-                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="60"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WaveLogo" translatesAutoresizingMaskIntoConstraints="NO" id="sY3-vc-z05">
+                                <rect key="frame" x="229" y="205" width="142" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="XZK-gl-yLp"/>
+                                    <constraint firstAttribute="height" constant="80" id="a5D-oA-vzR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="sY3-vc-z05" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="185" id="1Su-SJ-kex"/>
                             <constraint firstAttribute="trailing" secondItem="5MM-xD-RaU" secondAttribute="trailing" id="2rB-Lg-ktp"/>
                             <constraint firstItem="5MM-xD-RaU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3lX-Dg-vHa"/>
                             <constraint firstItem="uvG-5I-Hxy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4DN-to-Z65"/>
@@ -59,11 +60,13 @@
                             <constraint firstAttribute="trailing" secondItem="uvG-5I-Hxy" secondAttribute="trailing" id="G85-Sh-3Y0"/>
                             <constraint firstItem="5MM-xD-RaU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="aAu-WX-Uqe"/>
                             <constraint firstAttribute="bottom" secondItem="uvG-5I-Hxy" secondAttribute="bottom" constant="53" id="aWy-v2-xKh"/>
+                            <constraint firstItem="sY3-vc-z05" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ydF-R3-eSa"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="logInButton" destination="uvG-5I-Hxy" id="P2B-Zp-htM"/>
                         <outlet property="signUpButton" destination="5MM-xD-RaU" id="kxR-0f-tRg"/>
+                        <outlet property="waveLogoImage" destination="sY3-vc-z05" id="roL-TM-cco"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -71,4 +74,7 @@
             <point key="canvasLocation" x="221" y="341"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="WaveLogo" width="1979" height="1100"/>
+    </resources>
 </document>
