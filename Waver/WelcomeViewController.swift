@@ -20,9 +20,6 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-		//the storyboard won't let you change the background color of buttons, so I am doing it here
-		logInButton.backgroundColor = darkerColor
-		signUpButton.backgroundColor = lighterColor
 		
         // Do any additional setup after loading the view.
     }
