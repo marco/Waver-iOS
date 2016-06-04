@@ -14,6 +14,7 @@
 		926010FD1D03607700B0F66E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926010FB1D03607700B0F66E /* LaunchScreen.storyboard */; };
 		926011051D03610E00B0F66E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 926011041D03610E00B0F66E /* GoogleService-Info.plist */; };
 		928C372C1D0366B8005D309A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C372B1D0366B8005D309A /* WelcomeViewController.swift */; };
+		92BB35141D036A9D00EDFAA1 /* coolvetica rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92BB35131D036A9D00EDFAA1 /* coolvetica rg.ttf */; };
 		FAB831895C0CFD4FFFA1511B /* Pods_Waver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3812B4705C86BFFF177643 /* Pods_Waver.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		926010FE1D03607700B0F66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		926011041D03610E00B0F66E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		928C372B1D0366B8005D309A /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		92BB35131D036A9D00EDFAA1 /* coolvetica rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "coolvetica rg.ttf"; sourceTree = "<group>"; };
 		FC81DA2C624E158F4ED36924 /* Pods-Waver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Waver/Pods-Waver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 		926010F11D03607700B0F66E /* Waver */ = {
 			isa = PBXGroup;
 			children = (
+				92BB35121D036A3E00EDFAA1 /* ExtraFiles */,
 				928C372A1D0366A1005D309A /* ViewControllers */,
 				926011041D03610E00B0F66E /* GoogleService-Info.plist */,
 				926010F21D03607700B0F66E /* AppDelegate.swift */,
@@ -83,6 +86,14 @@
 				928C372B1D0366B8005D309A /* WelcomeViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		92BB35121D036A3E00EDFAA1 /* ExtraFiles */ = {
+			isa = PBXGroup;
+			children = (
+				92BB35131D036A9D00EDFAA1 /* coolvetica rg.ttf */,
+			);
+			name = ExtraFiles;
 			sourceTree = "<group>";
 		};
 		98EBEE6FB151301BADD8FE63 /* Frameworks */ = {
@@ -167,6 +178,7 @@
 				926011051D03610E00B0F66E /* GoogleService-Info.plist in Resources */,
 				926010FA1D03607700B0F66E /* Assets.xcassets in Resources */,
 				926010F81D03607700B0F66E /* Main.storyboard in Resources */,
+				92BB35141D036A9D00EDFAA1 /* coolvetica rg.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

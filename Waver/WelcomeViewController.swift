@@ -10,9 +10,20 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+	@IBOutlet var signUpButton: UIButton!
+	@IBOutlet var logInButton: UIButton!
+	
+	let normalColor : UIColor = UIColor(red: 25.0/255.0, green: 103.0/255.0, blue: 207.0/255.0, alpha: 1.0)
+	let darkerColor : UIColor = UIColor(red: 15.0/255.0, green: 48.0/255.0, blue: 113.0/255.0, alpha: 1.0)
+	let lighterColor : UIColor = UIColor(red: 89.0/255.0, green: 151.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		
+		//the storyboard won't let you change the background color of buttons, so I am doing it here
+		logInButton.backgroundColor = darkerColor
+		signUpButton.backgroundColor = lighterColor
+		
         // Do any additional setup after loading the view.
     }
 

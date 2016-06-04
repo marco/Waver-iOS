@@ -4,6 +4,12 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="coolvetica rg.ttf">
+            <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,11 +22,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MM-xD-RaU">
+                                <rect key="frame" x="0.0" y="546" width="600" height="54"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="38"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvG-5I-Hxy">
+                                <rect key="frame" x="0.0" y="490" width="600" height="57"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="38"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5MM-xD-RaU" secondAttribute="trailing" id="2rB-Lg-ktp"/>
+                            <constraint firstItem="5MM-xD-RaU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3lX-Dg-vHa"/>
+                            <constraint firstItem="uvG-5I-Hxy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4DN-to-Z65"/>
+                            <constraint firstAttribute="bottom" secondItem="5MM-xD-RaU" secondAttribute="bottom" id="AZh-Bx-DGo"/>
+                            <constraint firstItem="uvG-5I-Hxy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="EbM-l0-2tR"/>
+                            <constraint firstAttribute="trailing" secondItem="uvG-5I-Hxy" secondAttribute="trailing" id="G85-Sh-3Y0"/>
+                            <constraint firstItem="5MM-xD-RaU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="aAu-WX-Uqe"/>
+                            <constraint firstAttribute="bottom" secondItem="uvG-5I-Hxy" secondAttribute="bottom" constant="53" id="aWy-v2-xKh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logInButton" destination="uvG-5I-Hxy" id="P2B-Zp-htM"/>
+                        <outlet property="signUpButton" destination="5MM-xD-RaU" id="kxR-0f-tRg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="221" y="341"/>
         </scene>
     </scenes>
 </document>
