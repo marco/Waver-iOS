@@ -51,13 +51,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="sY3-vc-z05" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="185" id="1Su-SJ-kex"/>
                             <constraint firstAttribute="trailing" secondItem="5MM-xD-RaU" secondAttribute="trailing" id="2rB-Lg-ktp"/>
                             <constraint firstItem="5MM-xD-RaU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3lX-Dg-vHa"/>
                             <constraint firstItem="uvG-5I-Hxy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4DN-to-Z65"/>
                             <constraint firstAttribute="bottom" secondItem="5MM-xD-RaU" secondAttribute="bottom" id="AZh-Bx-DGo"/>
                             <constraint firstItem="uvG-5I-Hxy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="EbM-l0-2tR"/>
                             <constraint firstAttribute="trailing" secondItem="uvG-5I-Hxy" secondAttribute="trailing" id="G85-Sh-3Y0"/>
+                            <constraint firstItem="sY3-vc-z05" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-55" id="YMd-8e-kxo"/>
                             <constraint firstItem="5MM-xD-RaU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="aAu-WX-Uqe"/>
                             <constraint firstAttribute="bottom" secondItem="uvG-5I-Hxy" secondAttribute="bottom" constant="53" id="aWy-v2-xKh"/>
                             <constraint firstItem="sY3-vc-z05" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ydF-R3-eSa"/>
