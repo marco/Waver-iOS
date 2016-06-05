@@ -21,7 +21,7 @@ class WelcomeViewController: UIViewController {
 	override func viewDidAppear(animated: Bool) {
 		//hide nav item if the user goes back to the page
 		self.navigationController?.navigationBar.hidden = true
-		super.viewDidAppear(true)
+		super.viewDidAppear(animated)
 	}
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
