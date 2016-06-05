@@ -14,15 +14,14 @@ class WelcomeViewController: UIViewController {
 	@IBOutlet var signUpButton: UIButton!
 	@IBOutlet var logInButton: UIButton!
 	
+	override func viewWillAppear(animated: Bool) {
+		self.navigationController?.navigationBar.hidden = true
+		super.viewWillAppear(animated)
+	}
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-	override func viewDidAppear(animated: Bool) {
-		//hide nav item if the user goes back to the page
-		self.navigationController?.navigationBar.hidden = true
-		super.viewDidAppear(animated)
-	}
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

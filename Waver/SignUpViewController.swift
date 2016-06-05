@@ -15,15 +15,14 @@ class SignUpViewController: UIViewController {
 	@IBOutlet var usernameTextField: UITextField!
 	@IBOutlet var passwordTextField: UITextField!
 	
+	override func viewWillAppear(animated: Bool) {
+		self.navigationController?.navigationBar.hidden = false
+		super.viewWillAppear(animated)
+	}
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-	override func viewDidAppear(animated: Bool) {
-		//hide nav item
-		self.navigationController?.navigationBar.hidden = false
-		super.viewDidAppear(animated)
-	}
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
