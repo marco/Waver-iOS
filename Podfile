@@ -3,6 +3,8 @@
 
 target 'Waver' do
   pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   use_frameworks!
 
   # Pods for Waver
