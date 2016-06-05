@@ -11,9 +11,16 @@ import Firebase
 
 class SignUpViewController: UIViewController {
 
+	let emailTextFieldTag = 1
+	let usernameTextFieldTag = 2
+	let passwordTextFieldTag = 3
+	
 	@IBOutlet var emailTextField: UITextField!
 	@IBOutlet var usernameTextField: UITextField!
 	@IBOutlet var passwordTextField: UITextField!
+	@IBOutlet var EmailIncorrectButton: NameIncorrectButton!
+	@IBOutlet var UsernameIncorrectButton: NameIncorrectButton!
+	@IBOutlet var PasswordIncorrectButton: NameIncorrectButton!
 	
 	override func viewWillAppear(animated: Bool) {
 		self.navigationController?.navigationBar.hidden = false
@@ -27,8 +34,17 @@ class SignUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-	@IBAction func signUpButtonPressed(sender: AnyObject) {
-		trySignUp(emailTextField.text!, usernameValue: usernameTextField.text!, passwordValue: passwordTextField.text!)
+	@IBAction func fieldUpdated(sender: UITextField){
+		switch sender.tag {
+			case emailTextFieldTag:
+				EmailIncorrectButton.checkEmailField(sender.text!)
+			case usernameTextFieldTag:
+				UsernameIncorrectButton.checkUsernameField(sender.text!)
+			case passwordTextFieldTag:
+				PasswordIncorrectButton.checkPasswordField(sender.text!)
+			default:
+				break
+		}
 	}
 	func trySignUp(emailValue: String, usernameValue: String, passwordValue: String){
 		//creates in AUTH
@@ -38,6 +54,9 @@ class SignUpViewController: UIViewController {
 		
 		//adds to database
 		FIRDatabase.database().reference().child("users").child((FIRAuth.auth()?.currentUser?.uid)!).setValue(["email": emailValue, "username": usernameValue, "password": passwordValue])
+	}
+	@IBAction func signUpButtonPressed(sender: AnyObject) {
+		trySignUp(emailTextField.text!, usernameValue: usernameTextField.text!, passwordValue: passwordTextField.text!)
 	}
 
     /*
