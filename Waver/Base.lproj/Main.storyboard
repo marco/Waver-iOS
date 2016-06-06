@@ -28,8 +28,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MM-xD-RaU">
-                                <rect key="frame" x="0.0" y="546" width="600" height="54"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WaveLogo" translatesAutoresizingMaskIntoConstraints="NO" id="sY3-vc-z05">
+                                <rect key="frame" x="229" y="205" width="142" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="XZK-gl-yLp"/>
+                                    <constraint firstAttribute="height" constant="80" id="a5D-oA-vzR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvG-5I-Hxy">
+                                <rect key="frame" x="0.0" y="420" width="600" height="90"/>
+                                <color key="backgroundColor" red="0.058823529411764705" green="0.18823529411764706" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="38"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MM-xD-RaU">
+                                <rect key="frame" x="0.0" y="510" width="600" height="90"/>
                                 <color key="backgroundColor" red="0.34937310220000001" green="0.59359472989999995" blue="0.99867713449999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
@@ -40,34 +56,18 @@
                                     <segue destination="CM0-VF-Pv2" kind="show" id="sRE-ew-Vat"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WaveLogo" translatesAutoresizingMaskIntoConstraints="NO" id="sY3-vc-z05">
-                                <rect key="frame" x="229" y="205" width="142" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="142" id="XZK-gl-yLp"/>
-                                    <constraint firstAttribute="height" constant="80" id="a5D-oA-vzR"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvG-5I-Hxy">
-                                <rect key="frame" x="0.0" y="491" width="600" height="56"/>
-                                <color key="backgroundColor" red="0.058823529411764705" green="0.18823529411764706" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="38"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
-                                <state key="normal" title="Log In">
-                                    <color key="titleColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="5MM-xD-RaU" secondAttribute="trailing" id="2rB-Lg-ktp"/>
-                            <constraint firstItem="5MM-xD-RaU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3lX-Dg-vHa"/>
-                            <constraint firstItem="uvG-5I-Hxy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4DN-to-Z65"/>
-                            <constraint firstAttribute="bottom" secondItem="5MM-xD-RaU" secondAttribute="bottom" id="AZh-Bx-DGo"/>
-                            <constraint firstItem="uvG-5I-Hxy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="EbM-l0-2tR"/>
-                            <constraint firstAttribute="trailing" secondItem="uvG-5I-Hxy" secondAttribute="trailing" id="G85-Sh-3Y0"/>
+                            <constraint firstAttribute="trailing" secondItem="uvG-5I-Hxy" secondAttribute="trailing" id="2q0-9u-Rxu"/>
+                            <constraint firstAttribute="trailing" secondItem="5MM-xD-RaU" secondAttribute="trailing" id="4h5-xa-8L1"/>
+                            <constraint firstItem="5MM-xD-RaU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CMs-aZ-sVX"/>
+                            <constraint firstItem="uvG-5I-Hxy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SWj-HT-Pz9"/>
+                            <constraint firstItem="5MM-xD-RaU" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="V1F-Sd-vzB"/>
                             <constraint firstItem="sY3-vc-z05" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-55" id="YMd-8e-kxo"/>
-                            <constraint firstItem="5MM-xD-RaU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="aAu-WX-Uqe"/>
-                            <constraint firstAttribute="bottom" secondItem="uvG-5I-Hxy" secondAttribute="bottom" constant="53" id="aWy-v2-xKh"/>
+                            <constraint firstItem="5MM-xD-RaU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="ski-W3-zL4"/>
+                            <constraint firstItem="5MM-xD-RaU" firstAttribute="height" secondItem="uvG-5I-Hxy" secondAttribute="height" id="tTS-fl-3gu"/>
+                            <constraint firstItem="5MM-xD-RaU" firstAttribute="top" secondItem="uvG-5I-Hxy" secondAttribute="bottom" id="vNf-Jb-3xf"/>
                             <constraint firstItem="sY3-vc-z05" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ydF-R3-eSa"/>
                         </constraints>
                     </view>
