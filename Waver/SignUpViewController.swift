@@ -18,9 +18,10 @@ class SignUpViewController: UIViewController {
 	@IBOutlet var emailTextField: UITextField!
 	@IBOutlet var usernameTextField: UITextField!
 	@IBOutlet var passwordTextField: UITextField!
-	@IBOutlet var EmailIncorrectButton: NameIncorrectButton!
-	@IBOutlet var UsernameIncorrectButton: NameIncorrectButton!
-	@IBOutlet var PasswordIncorrectButton: NameIncorrectButton!
+	@IBOutlet var emailIncorrectButton: NameIncorrectButton!
+	@IBOutlet var usernameIncorrectButton: NameIncorrectButton!
+	@IBOutlet var passwordIncorrectButton: NameIncorrectButton!
+	@IBOutlet var signUpButton: SignUpButton!
 	
 	override func viewWillAppear(animated: Bool) {
 		self.navigationController?.navigationBar.hidden = false
@@ -37,26 +38,17 @@ class SignUpViewController: UIViewController {
 	@IBAction func fieldUpdated(sender: UITextField){
 		switch sender.tag {
 			case emailTextFieldTag:
-				EmailIncorrectButton.checkEmailField(sender.text!)
+				emailIncorrectButton.checkEmailField(sender.text!)
 			case usernameTextFieldTag:
-				UsernameIncorrectButton.checkUsernameField(sender.text!)
+				usernameIncorrectButton.checkUsernameField(sender.text!)
 			case passwordTextFieldTag:
-				PasswordIncorrectButton.checkPasswordField(sender.text!)
+				passwordIncorrectButton.checkPasswordField(sender.text!)
 			default:
 				break
 		}
 	}
-	func trySignUp(emailValue: String, usernameValue: String, passwordValue: String){
-		//creates in AUTH
-		FIRAuth.auth()?.createUserWithEmail(emailValue, password: passwordValue, completion: nil)
-		FIRAuth.auth()?.currentUser?.profileChangeRequest().displayName = usernameValue
-		FIRAuth.auth()?.currentUser?.profileChangeRequest().commitChangesWithCompletion(nil)
-		
-		//adds to database
-		FIRDatabase.database().reference().child("users").child((FIRAuth.auth()?.currentUser?.uid)!).setValue(["email": emailValue, "username": usernameValue, "password": passwordValue])
-	}
 	@IBAction func signUpButtonPressed(sender: AnyObject) {
-		trySignUp(emailTextField.text!, usernameValue: usernameTextField.text!, passwordValue: passwordTextField.text!)
+		signUpButton.trySignUp(emailTextField.text!, usernameValue: usernameTextField.text!, passwordValue: passwordTextField.text!)
 	}
 
     /*

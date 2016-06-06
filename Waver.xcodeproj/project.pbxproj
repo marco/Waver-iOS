@@ -16,6 +16,7 @@
 		928C372C1D0366B8005D309A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C372B1D0366B8005D309A /* WelcomeViewController.swift */; };
 		92B565641D03A91600E2E620 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B565631D03A91600E2E620 /* SignUpViewController.swift */; };
 		92B565671D04D7BA00E2E620 /* NameIncorrectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B565661D04D7BA00E2E620 /* NameIncorrectButton.swift */; };
+		92B5656B1D04F81300E2E620 /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5656A1D04F81300E2E620 /* SignUpButton.swift */; };
 		92BB35141D036A9D00EDFAA1 /* coolvetica rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92BB35131D036A9D00EDFAA1 /* coolvetica rg.ttf */; };
 		FAB831895C0CFD4FFFA1511B /* Pods_Waver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3812B4705C86BFFF177643 /* Pods_Waver.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		928C372B1D0366B8005D309A /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		92B565631D03A91600E2E620 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		92B565661D04D7BA00E2E620 /* NameIncorrectButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameIncorrectButton.swift; sourceTree = "<group>"; };
+		92B5656A1D04F81300E2E620 /* SignUpButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
 		92BB35131D036A9D00EDFAA1 /* coolvetica rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "coolvetica rg.ttf"; sourceTree = "<group>"; };
 		FC81DA2C624E158F4ED36924 /* Pods-Waver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Waver/Pods-Waver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				92B565661D04D7BA00E2E620 /* NameIncorrectButton.swift */,
+				92B5656A1D04F81300E2E620 /* SignUpButton.swift */,
 			);
 			name = OtherClasses;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				92B565641D03A91600E2E620 /* SignUpViewController.swift in Sources */,
 				92B565671D04D7BA00E2E620 /* NameIncorrectButton.swift in Sources */,
 				926010F31D03607700B0F66E /* AppDelegate.swift in Sources */,
+				92B5656B1D04F81300E2E620 /* SignUpButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

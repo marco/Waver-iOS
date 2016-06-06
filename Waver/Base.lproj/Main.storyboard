@@ -138,7 +138,7 @@
                                     <action selector="fieldUpdated:" destination="CM0-VF-Pv2" eventType="editingChanged" id="GkG-6T-YTX"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="523-sX-OnJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="523-sX-OnJ" customClass="SignUpButton" customModule="Waver" customModuleProvider="target">
                                 <rect key="frame" x="236" y="224" width="128" height="62"/>
                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="41"/>
                                 <state key="normal" title="Sign Up">
@@ -190,11 +190,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="mD1-yt-tXm"/>
                     <connections>
-                        <outlet property="EmailIncorrectButton" destination="wle-Jb-fTy" id="anw-la-zXR"/>
-                        <outlet property="PasswordIncorrectButton" destination="iXz-hC-f6L" id="vuA-Xm-Pfr"/>
-                        <outlet property="UsernameIncorrectButton" destination="YPw-1Y-Wal" id="QsJ-Bf-jXb"/>
+                        <outlet property="emailIncorrectButton" destination="wle-Jb-fTy" id="YCy-VM-otS"/>
                         <outlet property="emailTextField" destination="Wjd-hw-c5h" id="PnI-Iq-9P6"/>
+                        <outlet property="passwordIncorrectButton" destination="iXz-hC-f6L" id="Tou-N2-mKp"/>
                         <outlet property="passwordTextField" destination="Gu4-H2-yM3" id="Mnt-8c-diu"/>
+                        <outlet property="signUpButton" destination="523-sX-OnJ" id="gwJ-xi-Wha"/>
+                        <outlet property="usernameIncorrectButton" destination="YPw-1Y-Wal" id="d6P-iQ-ynM"/>
                         <outlet property="usernameTextField" destination="8LN-RM-cfs" id="pCH-QJ-y5m"/>
                     </connections>
                 </viewController>
