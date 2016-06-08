@@ -11,6 +11,8 @@ import Firebase
 
 class SignUpButton: UIButton {
 
+	let emailReplaceForDot = "`"
+	
 	func trySignUp(emailValue: String, usernameValue: String, passwordValue: String){
 		//creates in AUTH
 		FIRAuth.auth()?.createUserWithEmail(emailValue, password: passwordValue, completion: nil)
@@ -18,7 +20,9 @@ class SignUpButton: UIButton {
 		FIRAuth.auth()?.currentUser?.profileChangeRequest().commitChangesWithCompletion(nil)
 		
 		//adds to database
-		FIRDatabase.database().reference().child("users").child((FIRAuth.auth()?.currentUser?.uid)!).setValue(["email": emailValue, "username": usernameValue, "password": passwordValue])
+		var emailWithoutDot = emailValue.componentsSeparatedByString(".").joinWithSeparator(emailReplaceForDot)
+		FIRDatabase.database().reference().child("emails").child(emailWithoutDot).setValue(["username": usernameValue])
+		FIRDatabase.database().reference().child("usernames").child(usernameValue).setValue(["email": emailWithoutDot])
 	}
 
 }

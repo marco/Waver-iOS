@@ -10,9 +10,6 @@
             <string>CoolveticaRg-Regular</string>
             <string>CoolveticaRg-Regular</string>
             <string>CoolveticaRg-Regular</string>
-            <string>CoolveticaRg-Regular</string>
-            <string>CoolveticaRg-Regular</string>
-            <string>CoolveticaRg-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -38,7 +35,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvG-5I-Hxy">
                                 <rect key="frame" x="0.0" y="420" width="600" height="90"/>
                                 <color key="backgroundColor" red="0.058823529411764705" green="0.18823529411764706" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="38"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="57"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
@@ -47,7 +44,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MM-xD-RaU">
                                 <rect key="frame" x="0.0" y="510" width="600" height="90"/>
                                 <color key="backgroundColor" red="0.34937310220000001" green="0.59359472989999995" blue="0.99867713449999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="38"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="57"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="11"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
@@ -96,45 +93,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLr-Vb-vde">
-                                <rect key="frame" x="169" y="90" width="77" height="44"/>
-                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-hw-c5h">
-                                <rect key="frame" x="269" y="96" width="240" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-hw-c5h" customClass="SignUpTextField" customModule="Waver" customModuleProvider="target">
+                                <rect key="frame" x="60" y="96" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="done"/>
                                 <connections>
+                                    <action selector="fieldTapped:" destination="CM0-VF-Pv2" eventType="editingDidBegin" id="PwB-bP-JMn"/>
                                     <action selector="fieldUpdated:" destination="CM0-VF-Pv2" eventType="editingChanged" id="I4I-Sa-llT"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAW-NC-3eb">
-                                <rect key="frame" x="100" y="136" width="148" height="44"/>
-                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8LN-RM-cfs">
-                                <rect key="frame" x="269" y="142" width="240" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8LN-RM-cfs" customClass="SignUpTextField" customModule="Waver" customModuleProvider="target">
+                                <rect key="frame" x="60" y="142" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" returnKeyType="done"/>
                                 <connections>
+                                    <action selector="fieldTapped:" destination="CM0-VF-Pv2" eventType="editingDidBegin" id="i9y-6K-BoA"/>
                                     <action selector="fieldUpdated:" destination="CM0-VF-Pv2" eventType="editingChanged" id="9Ms-T6-Dws"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RT6-sP-pmP">
-                                <rect key="frame" x="103" y="180" width="143" height="44"/>
-                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gu4-H2-yM3">
-                                <rect key="frame" x="269" y="187" width="240" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gu4-H2-yM3" customClass="SignUpTextField" customModule="Waver" customModuleProvider="target">
+                                <rect key="frame" x="60" y="187" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" returnKeyType="done"/>
                                 <connections>
+                                    <action selector="fieldTapped:" destination="CM0-VF-Pv2" eventType="editingDidBegin" id="rS4-kj-efP"/>
                                     <action selector="fieldUpdated:" destination="CM0-VF-Pv2" eventType="editingChanged" id="GkG-6T-YTX"/>
                                 </connections>
                             </textField>
@@ -148,44 +130,50 @@
                                     <action selector="signUpButtonPressed:" destination="CM0-VF-Pv2" eventType="touchUpInside" id="l7u-0H-8MW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wle-Jb-fTy" userLabel="EmailIncorrectButton" customClass="NameIncorrectButton" customModule="Waver" customModuleProvider="target">
-                                <rect key="frame" x="479" y="96" width="30" height="30"/>
-                                <state key="normal" title="❓"/>
-                            </button>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPw-1Y-Wal" userLabel="UsernameIncorrectButton" customClass="NameIncorrectButton" customModule="Waver" customModuleProvider="target">
-                                <rect key="frame" x="479" y="142" width="30" height="30"/>
-                                <state key="normal" title="❓"/>
+                                <rect key="frame" x="510" y="142" width="30" height="30"/>
+                                <state key="normal" title="😡"/>
+                                <connections>
+                                    <action selector="incorrectButtonTapped:" destination="CM0-VF-Pv2" eventType="touchUpInside" id="JS9-Io-5dH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXz-hC-f6L" userLabel="PasswordIncorrectButton" customClass="NameIncorrectButton" customModule="Waver" customModuleProvider="target">
-                                <rect key="frame" x="479" y="187" width="30" height="30"/>
-                                <state key="normal" title="❓"/>
+                                <rect key="frame" x="510" y="187" width="30" height="30"/>
+                                <state key="normal" title="😡"/>
+                                <connections>
+                                    <action selector="incorrectButtonTapped:" destination="CM0-VF-Pv2" eventType="touchUpInside" id="MnW-Ua-B53"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wle-Jb-fTy" userLabel="EmailIncorrectButton" customClass="NameIncorrectButton" customModule="Waver" customModuleProvider="target">
+                                <rect key="frame" x="510" y="96" width="30" height="30"/>
+                                <state key="normal" title="😡"/>
+                                <connections>
+                                    <action selector="incorrectButtonTapped:" destination="CM0-VF-Pv2" eventType="touchUpInside" id="91P-lL-h9Z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wle-Jb-fTy" firstAttribute="trailing" secondItem="Wjd-hw-c5h" secondAttribute="trailing" id="54M-w6-YET"/>
-                            <constraint firstItem="iXz-hC-f6L" firstAttribute="trailing" secondItem="Gu4-H2-yM3" secondAttribute="trailing" id="6nM-mE-1px"/>
-                            <constraint firstItem="YLr-Vb-vde" firstAttribute="centerX" secondItem="VlZ-rs-grW" secondAttribute="centerX" multiplier="0.58" constant="33" id="7Kr-HQ-Ad6"/>
-                            <constraint firstItem="523-sX-OnJ" firstAttribute="top" secondItem="VlZ-rs-grW" secondAttribute="top" constant="224" id="BV5-L3-L9k"/>
-                            <constraint firstItem="YPw-1Y-Wal" firstAttribute="centerY" secondItem="8LN-RM-cfs" secondAttribute="centerY" id="BXS-gg-3uv"/>
-                            <constraint firstItem="Wjd-hw-c5h" firstAttribute="width" secondItem="VlZ-rs-grW" secondAttribute="width" multiplier="0.4" id="E04-1p-oni"/>
-                            <constraint firstItem="Wjd-hw-c5h" firstAttribute="top" secondItem="VlZ-rs-grW" secondAttribute="top" constant="96" id="Fud-6P-Auz"/>
-                            <constraint firstItem="Gu4-H2-yM3" firstAttribute="width" secondItem="Wjd-hw-c5h" secondAttribute="width" id="H0K-6G-ykt"/>
-                            <constraint firstItem="8LN-RM-cfs" firstAttribute="leading" secondItem="SAW-NC-3eb" secondAttribute="trailing" constant="21" id="I3s-bL-twS"/>
-                            <constraint firstItem="YPw-1Y-Wal" firstAttribute="trailing" secondItem="8LN-RM-cfs" secondAttribute="trailing" id="In1-jQ-nxz"/>
-                            <constraint firstItem="Wjd-hw-c5h" firstAttribute="leading" secondItem="YLr-Vb-vde" secondAttribute="trailing" constant="23" id="MNh-aH-0BP"/>
-                            <constraint firstItem="8LN-RM-cfs" firstAttribute="top" secondItem="VlZ-rs-grW" secondAttribute="top" constant="142" id="TkF-6o-YPU"/>
-                            <constraint firstItem="Gu4-H2-yM3" firstAttribute="leading" secondItem="RT6-sP-pmP" secondAttribute="trailing" constant="23" id="Tx6-pN-48x"/>
-                            <constraint firstItem="RT6-sP-pmP" firstAttribute="centerX" secondItem="VlZ-rs-grW" secondAttribute="centerX" multiplier="0.58" id="URm-ig-qhD"/>
-                            <constraint firstItem="RT6-sP-pmP" firstAttribute="top" secondItem="VlZ-rs-grW" secondAttribute="top" constant="180" id="Um9-fg-Peu"/>
-                            <constraint firstItem="8LN-RM-cfs" firstAttribute="width" secondItem="Wjd-hw-c5h" secondAttribute="width" id="XQa-ch-zme"/>
-                            <constraint firstItem="Gu4-H2-yM3" firstAttribute="top" secondItem="VlZ-rs-grW" secondAttribute="top" constant="187" id="cRN-xP-6K7"/>
-                            <constraint firstItem="523-sX-OnJ" firstAttribute="centerX" secondItem="VlZ-rs-grW" secondAttribute="centerX" id="f0d-dr-A7L"/>
-                            <constraint firstItem="SAW-NC-3eb" firstAttribute="centerX" secondItem="VlZ-rs-grW" secondAttribute="centerX" multiplier="0.58" id="rT1-xo-pJX"/>
-                            <constraint firstItem="wle-Jb-fTy" firstAttribute="centerY" secondItem="Wjd-hw-c5h" secondAttribute="centerY" id="try-JU-32n"/>
-                            <constraint firstItem="YLr-Vb-vde" firstAttribute="top" secondItem="VlZ-rs-grW" secondAttribute="top" constant="90" id="tyO-Tb-vQb"/>
-                            <constraint firstItem="SAW-NC-3eb" firstAttribute="top" secondItem="VlZ-rs-grW" secondAttribute="top" constant="136" id="ufU-xa-beq"/>
-                            <constraint firstItem="iXz-hC-f6L" firstAttribute="centerY" secondItem="Gu4-H2-yM3" secondAttribute="centerY" id="zSp-C4-Q7C"/>
+                            <constraint firstItem="iXz-hC-f6L" firstAttribute="trailing" secondItem="Gu4-H2-yM3" secondAttribute="trailing" id="12Z-3p-Ych"/>
+                            <constraint firstItem="iXz-hC-f6L" firstAttribute="top" secondItem="Gu4-H2-yM3" secondAttribute="top" id="4u9-Xk-BMG"/>
+                            <constraint firstItem="Gu4-H2-yM3" firstAttribute="top" secondItem="8LN-RM-cfs" secondAttribute="bottom" constant="15" id="8n5-hQ-Gri"/>
+                            <constraint firstItem="iXz-hC-f6L" firstAttribute="height" secondItem="Gu4-H2-yM3" secondAttribute="height" id="CTG-7u-hNg"/>
+                            <constraint firstItem="wle-Jb-fTy" firstAttribute="trailing" secondItem="Wjd-hw-c5h" secondAttribute="trailing" id="FVO-NQ-8xt"/>
+                            <constraint firstItem="Wjd-hw-c5h" firstAttribute="width" secondItem="VlZ-rs-grW" secondAttribute="width" multiplier="0.8" id="Gz3-Gw-fkt"/>
+                            <constraint firstItem="YPw-1Y-Wal" firstAttribute="trailing" secondItem="8LN-RM-cfs" secondAttribute="trailing" id="O7p-6v-z8d"/>
+                            <constraint firstItem="wle-Jb-fTy" firstAttribute="top" secondItem="Wjd-hw-c5h" secondAttribute="top" id="PlR-v5-58J"/>
+                            <constraint firstItem="YPw-1Y-Wal" firstAttribute="top" secondItem="8LN-RM-cfs" secondAttribute="top" id="Qfs-4U-LZi"/>
+                            <constraint firstItem="523-sX-OnJ" firstAttribute="centerX" secondItem="VlZ-rs-grW" secondAttribute="centerX" id="R9r-j5-IPe"/>
+                            <constraint firstItem="Wjd-hw-c5h" firstAttribute="centerX" secondItem="VlZ-rs-grW" secondAttribute="centerX" id="RDY-4n-4Wm"/>
+                            <constraint firstItem="8LN-RM-cfs" firstAttribute="width" secondItem="VlZ-rs-grW" secondAttribute="width" multiplier="0.8" id="Twv-x5-c32"/>
+                            <constraint firstItem="Wjd-hw-c5h" firstAttribute="top" secondItem="VlZ-rs-grW" secondAttribute="top" constant="96" id="WLt-YO-rx8"/>
+                            <constraint firstItem="8LN-RM-cfs" firstAttribute="top" secondItem="Wjd-hw-c5h" secondAttribute="bottom" constant="16" id="aGp-NM-JAa"/>
+                            <constraint firstItem="Gu4-H2-yM3" firstAttribute="width" secondItem="VlZ-rs-grW" secondAttribute="width" multiplier="0.8" id="cIc-t2-7hp"/>
+                            <constraint firstItem="8LN-RM-cfs" firstAttribute="centerX" secondItem="VlZ-rs-grW" secondAttribute="centerX" id="fLO-Uk-M2h"/>
+                            <constraint firstItem="Gu4-H2-yM3" firstAttribute="centerX" secondItem="VlZ-rs-grW" secondAttribute="centerX" id="kte-GM-xyA"/>
+                            <constraint firstItem="YPw-1Y-Wal" firstAttribute="height" secondItem="8LN-RM-cfs" secondAttribute="height" id="vMI-U7-sFp"/>
+                            <constraint firstItem="523-sX-OnJ" firstAttribute="centerY" secondItem="VlZ-rs-grW" secondAttribute="centerY" constant="-45" id="vdV-gf-3jk"/>
+                            <constraint firstItem="wle-Jb-fTy" firstAttribute="height" secondItem="Wjd-hw-c5h" secondAttribute="height" id="yoC-SC-3xH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="mD1-yt-tXm"/>
