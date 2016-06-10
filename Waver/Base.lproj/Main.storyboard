@@ -10,6 +10,7 @@
             <string>CoolveticaRg-Regular</string>
             <string>CoolveticaRg-Regular</string>
             <string>CoolveticaRg-Regular</string>
+            <string>CoolveticaRg-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -40,6 +41,9 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" red="0.098679289221763611" green="0.40259048342704773" blue="0.8100961446762085" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8Cu-I4-Eme" kind="show" id="OdS-8x-J3S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MM-xD-RaU">
                                 <rect key="frame" x="0.0" y="510" width="600" height="90"/>
@@ -80,6 +84,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="470" y="354"/>
+        </scene>
+        <!--Log In-->
+        <scene sceneID="ORD-p6-Oew">
+            <objects>
+                <viewController id="8Cu-I4-Eme" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JqM-Qc-dhj"/>
+                        <viewControllerLayoutGuide type="bottom" id="usc-EP-Fxw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tZ2-X2-Dk5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email or username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXm-nL-vqV">
+                                <rect key="frame" x="60" y="96" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grw-fI-YvD">
+                                <rect key="frame" x="60" y="142" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SR1-UF-s4T">
+                                <rect key="frame" x="249" y="179" width="102" height="62"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="41"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.098679289219999994" green="0.40259048339999998" blue="0.81009614470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SR1-UF-s4T" firstAttribute="centerX" secondItem="tZ2-X2-Dk5" secondAttribute="centerX" id="JTj-Ji-4cX"/>
+                            <constraint firstItem="SR1-UF-s4T" firstAttribute="top" secondItem="grw-fI-YvD" secondAttribute="bottom" constant="7" id="MyF-zn-haH"/>
+                            <constraint firstItem="fXm-nL-vqV" firstAttribute="width" secondItem="tZ2-X2-Dk5" secondAttribute="width" multiplier="0.8" id="OXx-4F-3Ho"/>
+                            <constraint firstItem="grw-fI-YvD" firstAttribute="centerX" secondItem="tZ2-X2-Dk5" secondAttribute="centerX" id="Rzh-4G-cjz"/>
+                            <constraint firstItem="grw-fI-YvD" firstAttribute="width" secondItem="tZ2-X2-Dk5" secondAttribute="width" multiplier="0.8" id="XbT-UL-oVa"/>
+                            <constraint firstItem="fXm-nL-vqV" firstAttribute="centerX" secondItem="tZ2-X2-Dk5" secondAttribute="centerX" id="ZRH-DB-ebG"/>
+                            <constraint firstItem="grw-fI-YvD" firstAttribute="top" secondItem="fXm-nL-vqV" secondAttribute="bottom" constant="16" id="aRx-So-k7E"/>
+                            <constraint firstItem="fXm-nL-vqV" firstAttribute="top" secondItem="tZ2-X2-Dk5" secondAttribute="top" constant="96" id="oAv-TZ-fFA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log In" id="pYY-rF-IS4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0OJ-ZX-4pN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="-24"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="Xn3-MP-6Oc">
@@ -168,11 +220,11 @@
                             <constraint firstItem="8LN-RM-cfs" firstAttribute="width" secondItem="VlZ-rs-grW" secondAttribute="width" multiplier="0.8" id="Twv-x5-c32"/>
                             <constraint firstItem="Wjd-hw-c5h" firstAttribute="top" secondItem="VlZ-rs-grW" secondAttribute="top" constant="96" id="WLt-YO-rx8"/>
                             <constraint firstItem="8LN-RM-cfs" firstAttribute="top" secondItem="Wjd-hw-c5h" secondAttribute="bottom" constant="16" id="aGp-NM-JAa"/>
+                            <constraint firstItem="523-sX-OnJ" firstAttribute="top" secondItem="Gu4-H2-yM3" secondAttribute="bottom" constant="7" id="b5g-yv-Xyj"/>
                             <constraint firstItem="Gu4-H2-yM3" firstAttribute="width" secondItem="VlZ-rs-grW" secondAttribute="width" multiplier="0.8" id="cIc-t2-7hp"/>
                             <constraint firstItem="8LN-RM-cfs" firstAttribute="centerX" secondItem="VlZ-rs-grW" secondAttribute="centerX" id="fLO-Uk-M2h"/>
                             <constraint firstItem="Gu4-H2-yM3" firstAttribute="centerX" secondItem="VlZ-rs-grW" secondAttribute="centerX" id="kte-GM-xyA"/>
                             <constraint firstItem="YPw-1Y-Wal" firstAttribute="height" secondItem="8LN-RM-cfs" secondAttribute="height" id="vMI-U7-sFp"/>
-                            <constraint firstItem="523-sX-OnJ" firstAttribute="centerY" secondItem="VlZ-rs-grW" secondAttribute="centerY" constant="-45" id="vdV-gf-3jk"/>
                             <constraint firstItem="wle-Jb-fTy" firstAttribute="height" secondItem="Wjd-hw-c5h" secondAttribute="height" id="yoC-SC-3xH"/>
                         </constraints>
                     </view>
@@ -189,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrZ-tG-bv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1154" y="354"/>
+            <point key="canvasLocation" x="1175" y="661"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IIy-nN-rp4">
