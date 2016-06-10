@@ -6,7 +6,7 @@
 //  Copyright © 2016 Skunk. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class MessagesTableViewCell: UITableViewCell {
 
