@@ -14,9 +14,6 @@
 		926010FD1D03607700B0F66E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926010FB1D03607700B0F66E /* LaunchScreen.storyboard */; };
 		926011051D03610E00B0F66E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 926011041D03610E00B0F66E /* GoogleService-Info.plist */; };
 		928C372C1D0366B8005D309A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C372B1D0366B8005D309A /* WelcomeViewController.swift */; };
-		9291B7881D0A461E00919C73 /* LogInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291B7871D0A461E00919C73 /* LogInButton.swift */; };
-		9291B78A1D0A463F00919C73 /* LogInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291B7891D0A463F00919C73 /* LogInTextField.swift */; };
-		9291B78C1D0A466500919C73 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9291B78B1D0A466500919C73 /* LogInViewController.swift */; };
 		92B565641D03A91600E2E620 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B565631D03A91600E2E620 /* SignUpViewController.swift */; };
 		92B565671D04D7BA00E2E620 /* SignUpIncorrectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B565661D04D7BA00E2E620 /* SignUpIncorrectButton.swift */; };
 		92B5656B1D04F81300E2E620 /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5656A1D04F81300E2E620 /* SignUpButton.swift */; };
@@ -37,9 +34,6 @@
 		926010FE1D03607700B0F66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		926011041D03610E00B0F66E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		928C372B1D0366B8005D309A /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		9291B7871D0A461E00919C73 /* LogInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInButton.swift; sourceTree = "<group>"; };
-		9291B7891D0A463F00919C73 /* LogInTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInTextField.swift; sourceTree = "<group>"; };
-		9291B78B1D0A466500919C73 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		92B565631D03A91600E2E620 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		92B565661D04D7BA00E2E620 /* SignUpIncorrectButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpIncorrectButton.swift; sourceTree = "<group>"; };
 		92B5656A1D04F81300E2E620 /* SignUpButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
@@ -100,7 +94,6 @@
 				926010F41D03607700B0F66E /* ViewController.swift */,
 				928C372B1D0366B8005D309A /* WelcomeViewController.swift */,
 				92B565631D03A91600E2E620 /* SignUpViewController.swift */,
-				9291B78B1D0A466500919C73 /* LogInViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -111,8 +104,6 @@
 				92B565661D04D7BA00E2E620 /* SignUpIncorrectButton.swift */,
 				92B5656A1D04F81300E2E620 /* SignUpButton.swift */,
 				92B5656C1D05077800E2E620 /* SignUpTextField.swift */,
-				9291B7871D0A461E00919C73 /* LogInButton.swift */,
-				9291B7891D0A463F00919C73 /* LogInTextField.swift */,
 			);
 			name = OtherClasses;
 			sourceTree = "<group>";
@@ -267,14 +258,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				928C372C1D0366B8005D309A /* WelcomeViewController.swift in Sources */,
-				9291B7881D0A461E00919C73 /* LogInButton.swift in Sources */,
 				926010F51D03607700B0F66E /* ViewController.swift in Sources */,
 				92B5656D1D05077800E2E620 /* SignUpTextField.swift in Sources */,
 				92B565641D03A91600E2E620 /* SignUpViewController.swift in Sources */,
-				9291B78A1D0A463F00919C73 /* LogInTextField.swift in Sources */,
 				92B565671D04D7BA00E2E620 /* SignUpIncorrectButton.swift in Sources */,
 				926010F31D03607700B0F66E /* AppDelegate.swift in Sources */,
-				9291B78C1D0A466500919C73 /* LogInViewController.swift in Sources */,
 				92B5656B1D04F81300E2E620 /* SignUpButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

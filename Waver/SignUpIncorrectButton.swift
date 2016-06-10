@@ -29,10 +29,6 @@ class SignUpIncorrectButton: UIButton {
 	var isCorrect = false
 	
 	func checkField(currentText: String, typeToCheck: String) -> Bool{
-		FIRDatabase.database().reference().child("usernames").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
-			print("hi")
-		})
-		
 		switch typeToCheck {
 		case emailCheckCode:
 			self.setTitle(loadingNameIcon, forState: UIControlState.Normal)
