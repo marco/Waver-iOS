@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class SignUpIncorrectButton: UIButton {
+class NameIncorrectButton: UIButton {
 	
 	let incorrectNameIcon = "😡"
 	let loadingNameIcon = "❓"
