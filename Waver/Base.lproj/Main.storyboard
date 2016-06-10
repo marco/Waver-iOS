@@ -130,21 +130,21 @@
                                     <action selector="signUpButtonPressed:" destination="CM0-VF-Pv2" eventType="touchUpInside" id="l7u-0H-8MW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPw-1Y-Wal" userLabel="UsernameIncorrectButton" customClass="NameIncorrectButton" customModule="Waver" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPw-1Y-Wal" userLabel="UsernameIncorrectButton" customClass="SignUpIncorrectButton" customModule="Waver" customModuleProvider="target">
                                 <rect key="frame" x="510" y="142" width="30" height="30"/>
                                 <state key="normal" title="😡"/>
                                 <connections>
                                     <action selector="incorrectButtonTapped:" destination="CM0-VF-Pv2" eventType="touchUpInside" id="JS9-Io-5dH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXz-hC-f6L" userLabel="PasswordIncorrectButton" customClass="NameIncorrectButton" customModule="Waver" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXz-hC-f6L" userLabel="PasswordIncorrectButton" customClass="SignUpIncorrectButton" customModule="Waver" customModuleProvider="target">
                                 <rect key="frame" x="510" y="187" width="30" height="30"/>
                                 <state key="normal" title="😡"/>
                                 <connections>
                                     <action selector="incorrectButtonTapped:" destination="CM0-VF-Pv2" eventType="touchUpInside" id="MnW-Ua-B53"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wle-Jb-fTy" userLabel="EmailIncorrectButton" customClass="NameIncorrectButton" customModule="Waver" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wle-Jb-fTy" userLabel="EmailIncorrectButton" customClass="SignUpIncorrectButton" customModule="Waver" customModuleProvider="target">
                                 <rect key="frame" x="510" y="96" width="30" height="30"/>
                                 <state key="normal" title="😡"/>
                                 <connections>
