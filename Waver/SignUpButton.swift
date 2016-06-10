@@ -11,7 +11,7 @@ import Firebase
 
 class SignUpButton: UIButton {
 
-	let emailReplaceForDot = "•"
+	let emailReplaceForDot = "`"
 	
 	func trySignUp(emailValue: String, usernameValue: String, passwordValue: String){
 		//creates in AUTH

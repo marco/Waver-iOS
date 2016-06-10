@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class SignUpIncorrectButton: UIButton {
+class NameIncorrectButton: UIButton {
 	
 	let incorrectNameIcon = "😡"
 	let loadingNameIcon = "❓"
@@ -26,34 +26,19 @@ class SignUpIncorrectButton: UIButton {
 	let usernameExistsCode = "yes"
 	let usernameEmptyCode = "no"
 	
-	let emailReplaceForDot = "•"
-	
 	var isCorrect = false
 	
 	func checkField(currentText: String, typeToCheck: String) -> Bool{
-		
 		switch typeToCheck {
 		case emailCheckCode:
 			self.setTitle(loadingNameIcon, forState: UIControlState.Normal)
 			if(currentText.containsString("@")){
 				if(currentText.containsString(".")){
 					if(!currentText.containsString(" ")){
-						FIRDatabase.database().reference().child("emails").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
-							if(!snapshot.hasChild(currentText.componentsSeparatedByString(".").joinWithSeparator(self.emailReplaceForDot))){
-								self.setTitle(self.correctNameIcon, forState: UIControlState.Normal)
-								self.isCorrect = true
-							}
-							else if(snapshot.hasChild(currentText.componentsSeparatedByString(".").joinWithSeparator(self.emailReplaceForDot))){
-								self.setTitle(self.incorrectNameIcon, forState: UIControlState.Normal)
-								self.isCorrect = false
-							}
-						})
-						if isCorrect {
-							return true
-						}
-						else{
-							return false
-						}
+						//if it doesnt (because "!")
+						self.setTitle(correctNameIcon, forState: UIControlState.Normal)
+						isCorrect = true
+						return true
 					}
 					else{
 						self.setTitle(incorrectNameIcon, forState: UIControlState.Normal)
@@ -85,9 +70,7 @@ class SignUpIncorrectButton: UIButton {
 							self.setTitle(self.incorrectNameIcon, forState: UIControlState.Normal)
 							self.isCorrect = false
 						}
-					}) { error in
-						print(error)
-					}
+					})
 					if isCorrect {
 						return true
 					}

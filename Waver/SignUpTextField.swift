@@ -12,7 +12,7 @@ class SignUpTextField: UITextField, UITextFieldDelegate {
 
 	let incorrectColor = UIColor(red: 225.0/225.0, green: 0.0/225.0, blue: 25.0/225.0, alpha: 1.0)
 	let defaultColor = UIColor.blackColor()
-	let emailIncorrectMessage = "Must be valid and unused"
+	let emailIncorrectMessage = "Must be a valid email"
 	let usernameIncorrectMessage = "Must use allowed characters"
 	let passwordIncorrectMessage = "Must be more than 5 characters"
 	var showingRequirements = false

@@ -14,9 +14,9 @@ class SignUpViewController: UIViewController {
 	@IBOutlet var emailTextField: SignUpTextField!
 	@IBOutlet var usernameTextField: SignUpTextField!
 	@IBOutlet var passwordTextField: SignUpTextField!
-	@IBOutlet var emailIncorrectButton: SignUpIncorrectButton!
-	@IBOutlet var usernameIncorrectButton: SignUpIncorrectButton!
-	@IBOutlet var passwordIncorrectButton: SignUpIncorrectButton!
+	@IBOutlet var emailIncorrectButton: NameIncorrectButton!
+	@IBOutlet var usernameIncorrectButton: NameIncorrectButton!
+	@IBOutlet var passwordIncorrectButton: NameIncorrectButton!
 	@IBOutlet var signUpButton: SignUpButton!
 	
 	override func viewWillAppear(animated: Bool) {
@@ -35,7 +35,7 @@ class SignUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-	@IBAction func incorrectButtonTapped(sender: SignUpIncorrectButton){
+	@IBAction func incorrectButtonTapped(sender: NameIncorrectButton){
 		if(sender.isCorrect == false){
 			switch sender {
 				case emailIncorrectButton:
