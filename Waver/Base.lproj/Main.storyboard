@@ -88,7 +88,7 @@
         <!--Log In-->
         <scene sceneID="ORD-p6-Oew">
             <objects>
-                <viewController id="8Cu-I4-Eme" sceneMemberID="viewController">
+                <viewController id="8Cu-I4-Eme" customClass="LogInViewController" customModule="Waver" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JqM-Qc-dhj"/>
                         <viewControllerLayoutGuide type="bottom" id="usc-EP-Fxw"/>
@@ -97,22 +97,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email or username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXm-nL-vqV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email or username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXm-nL-vqV" customClass="LogInTextField" customModule="Waver" customModuleProvider="target">
                                 <rect key="frame" x="60" y="96" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grw-fI-YvD">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grw-fI-YvD" customClass="LogInTextField" customModule="Waver" customModuleProvider="target">
                                 <rect key="frame" x="60" y="142" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SR1-UF-s4T">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SR1-UF-s4T" customClass="LogInButton" customModule="Waver" customModuleProvider="target">
                                 <rect key="frame" x="249" y="179" width="102" height="62"/>
                                 <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="41"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" red="0.098679289219999994" green="0.40259048339999998" blue="0.81009614470000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="logInTapped:" destination="8Cu-I4-Eme" eventType="touchUpInside" id="NAl-L7-qaP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -128,6 +131,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Log In" id="pYY-rF-IS4"/>
+                    <connections>
+                        <outlet property="emailOrUsernameTextField" destination="fXm-nL-vqV" id="5xL-Ev-2ii"/>
+                        <outlet property="logInButton" destination="SR1-UF-s4T" id="VaW-fn-dzU"/>
+                        <outlet property="passwordTextField" destination="grw-fI-YvD" id="Kj3-4f-Gbd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0OJ-ZX-4pN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
