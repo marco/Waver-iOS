@@ -75,7 +75,7 @@ class SignUpIncorrectButton: UIButton {
 		case usernameCheckCode:
 			self.setTitle(loadingNameIcon, forState: UIControlState.Normal)
 			if(currentText.characters.count >= minimumUsernameCharacters){
-				if(!currentText.containsString(" ") && !currentText.containsString(".") && !currentText.containsString("/") && !currentText.containsString("$") && !currentText.containsString("[") && !currentText.containsString("]") && !currentText.containsString("#") && !currentText.containsString("@")){
+				if(!currentText.containsString(" ") && !currentText.containsString(".") && !currentText.containsString("/") && !currentText.containsString("$") && !currentText.containsString("[") && !currentText.containsString("]") && !currentText.containsString("#") && !currentText.containsString("@") && !currentText.containsString(",")){
 					FIRDatabase.database().reference().child("usernames").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
 						if(!snapshot.hasChild(currentText)){
 							self.setTitle(self.correctNameIcon, forState: UIControlState.Normal)

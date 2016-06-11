@@ -20,7 +20,7 @@ class WelcomeViewController: UIViewController {
 		super.viewWillAppear(animated)
 		
 		var friendsNavigationController = storyboard?.instantiateViewControllerWithIdentifier("friendsNavigationController")
-		
+				
 		if(FIRAuth.auth()?.currentUser != nil){
 			showViewController(friendsNavigationController!, sender: self)
 		}

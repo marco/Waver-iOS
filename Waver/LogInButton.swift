@@ -18,6 +18,7 @@ class LogInButton: UIButton {
 		var trueEmail: String = String()
 		
 		try! FIRAuth.auth()!.signOut()
+		
 		if(emailOrUsernameValue.containsString(".") || emailOrUsernameValue.containsString("@")){
 			isUsername = false
 			trueEmail = emailOrUsernameValue
@@ -38,17 +39,18 @@ class LogInButton: UIButton {
 		}
 	}
 	func doLogIn(emailValue: String, passwordValue: String, emailOrUsernameTextFieldValue: LogInTextField, passwordTextFieldValue: LogInTextField){
-		FIRAuth.auth()?.signInWithEmail(emailValue, password: passwordValue) { (user, error) in
-			if(user == nil){
+		FIRAuth.auth()?.signInWithEmail(emailValue, password: passwordValue, completion: {(user, error) in
+			if(user == nil || FIRAuth.auth()?.currentUser == nil){
 				self.logInFailed(emailOrUsernameTextFieldValue, passwordTextFieldValue: passwordTextFieldValue)
 			}
 			else{
 				self.logInSucceed()
 			}
-		}
+		})
 	}
 	func logInSucceed(){
-		print("ayy")
+		var friendsNavigationController = self.window?.rootViewController?.storyboard!.instantiateViewControllerWithIdentifier("friendsNavigationController")
+		self.window?.rootViewController!.showViewController(friendsNavigationController!, sender: self)
 	}
 	func logInFailed(emailOrUsernameTextFieldValue: LogInTextField, passwordTextFieldValue: LogInTextField){
 		emailOrUsernameTextFieldValue.showRequirements("emailOrUsername")
