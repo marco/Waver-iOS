@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class WelcomeViewController: UIViewController {
 
@@ -17,6 +18,12 @@ class WelcomeViewController: UIViewController {
 	override func viewWillAppear(animated: Bool) {
 		self.navigationController?.navigationBar.hidden = true
 		super.viewWillAppear(animated)
+		
+		var friendsNavigationController = storyboard?.instantiateViewControllerWithIdentifier("friendsNavigationController")
+		
+		if(FIRAuth.auth()?.currentUser != nil){
+			showViewController(friendsNavigationController!, sender: self)
+		}
 	}
     override func viewDidLoad() {
         super.viewDidLoad()
